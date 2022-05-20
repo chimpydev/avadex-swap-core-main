@@ -5,8 +5,8 @@ import { deployContract } from 'ethereum-waffle'
 import { expandTo18Decimals } from './utilities'
 
 import ERC20 from '../../build/ERC20.json'
-import ChimpyFactory from '../../build/ChimpyFactory.json'
-import ChimpyPair from '../../build/ChimpyPair.json'
+import AvadexFactory from '../../build/AvadexFactory.json'
+import AvadexPair from '../../build/AvadexPair.json'
 
 interface FactoryFixture {
   factory: Contract
@@ -17,7 +17,7 @@ const overrides = {
 }
 
 export async function factoryFixture(_: Web3Provider, [wallet]: Wallet[]): Promise<FactoryFixture> {
-  const factory = await deployContract(wallet, ChimpyFactory, [wallet.address], overrides)
+  const factory = await deployContract(wallet, AvadexFactory, [wallet.address], overrides)
   return { factory }
 }
 
@@ -35,7 +35,7 @@ export async function pairFixture(provider: Web3Provider, [wallet]: Wallet[]): P
 
   await factory.createPair(tokenA.address, tokenB.address, overrides)
   const pairAddress = await factory.getPair(tokenA.address, tokenB.address)
-  const pair = new Contract(pairAddress, JSON.stringify(ChimpyPair.abi), provider).connect(wallet)
+  const pair = new Contract(pairAddress, JSON.stringify(AvadexPair.abi), provider).connect(wallet)
 
   const token0Address = (await pair.token0()).address
   const token0 = tokenA.address === token0Address ? tokenA : tokenB

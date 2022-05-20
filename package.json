@@ -1,11 +1,11 @@
 {
-  "name": "@chimpyswap-libs/chimpy-swap-core",
-  "description": "🎛 Core contracts for the chimpy protocol",
+  "name": "@chimpydev/avadex-swap-core-main",
+  "description": "🎛 Core contracts for the avex protocol",
   "version": "0.1.0",
-  "homepage": "https://chimpyswap.com",
+  "homepage": "https://avadex.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chimpyswap/chimpy-swap-core.git"
+    "url": "https://github.com/chimpydev/avadex-swap-core-main.git"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"

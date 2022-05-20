@@ -1,8 +1,8 @@
-# Chimpy Factory
+# Avadex Factory
 
-[![Actions Status](https://github.com/chimpyswap/chimpy-swap-core/workflows/CI/badge.svg)](https://github.com/chimpyswap/chimpy-swap-core/actions)
+[![Actions Status](https://github.com/chimpydev/avadex-swap-core-main/workflows/CI/badge.svg)](https://github.com/chimpydev/avadex-swap-core-main/actions)
 
-In-depth documentation on ChimpySwap is available at [docs.chimpyswap.com](https://docs.chimpyswap.com/).
+In-depth documentation on Avadex is available at [docs.avadex.io](https://docs.avadex.io/).
 
 # Local Development
 
